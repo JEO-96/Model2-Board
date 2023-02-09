@@ -1,0 +1,28 @@
+<!-- 
+<Context>
+	<Resource name="jdbc/OracleDB"
+		auth="Container"		
+		type="javax.sql.DataSource"
+		username="hr"
+		password="1234"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		maxActive="500"
+		maxIdle="100"
+	/>
+</Context>
+ -->
+
+<Context>
+	<Resource name="jdbc/PostgresDB"
+		auth="Container"
+		driverClassName="org.postgresql.Driver"
+		type="javax.sql.DataSource"
+		url="jdbc:postgresql://127.0.0.1:5432/postgres"
+		username="postgres"
+		password="1234"
+		maxActive="20"
+		maxIdle="10"
+		maxWait="-1"
+	/>
+</Context>
